@@ -73,9 +73,9 @@
     "svelte": "^5.55.7",
     "svelte-toc": "^0.6.3",
     "typescript": "6.0.3",
-    "vite": "npm:@voidzero-dev/vite-plus-core@0.1.21",
-    "vite-plus": "0.1.21",
-    "vitest": "npm:@voidzero-dev/vite-plus-test@0.1.21"
+    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+    "vite-plus": "https://pkg.pr.new/voidzero-dev/vite-plus@1633",
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest"
   },
   "peerDependencies": {
     "@wooorm/starry-night": "^3.0.0",
@@ -92,7 +92,8 @@
   },
   "overrides": {
     "svelte": "$svelte",
-    "vite": "npm:@voidzero-dev/vite-plus-core@0.1.21",
-    "vitest": "npm:@voidzero-dev/vite-plus-test@0.1.21"
+    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest",
+    "vite-plus": "https://pkg.pr.new/voidzero-dev/vite-plus@1633"
   }
 }
