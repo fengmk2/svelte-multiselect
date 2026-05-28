@@ -74,8 +74,7 @@
     "svelte-toc": "^0.6.3",
     "typescript": "6.0.3",
     "vite": "https://pkg.pr.new/voidzero-dev/vite-plus/@voidzero-dev/vite-plus-core@5577b0154f33d1480a3c96347e94fa5d2094de2e",
-    "vite-plus": "https://pkg.pr.new/voidzero-dev/vite-plus@1588",
-    "vitest": "^4.1.5"
+    "vite-plus": "https://pkg.pr.new/voidzero-dev/vite-plus@1588"
   },
   "peerDependencies": {
     "@wooorm/starry-night": "^3.0.0",
