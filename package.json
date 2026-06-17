@@ -65,7 +65,7 @@
     "@sveltejs/package": "2.5.8",
     "@sveltejs/vite-plugin-svelte": "^7.1.2",
     "@types/node": "^25.9.2",
-    "@vitest/coverage-v8": "^4.1.8",
+    "@vitest/coverage-v8": "4.1.9",
     "@wooorm/starry-night": "^3.10.0",
     "acorn": "^8.16.0",
     "happy-dom": "^20.10.2",
@@ -74,8 +74,8 @@
     "svelte-toc": "^0.7.0",
     "typescript": "6.0.3",
     "vite": "^8.0.16",
-    "vite-plus": "0.1.24",
-    "vitest": "^4.1.8"
+    "vite-plus": "https://pkg.pr.new/voidzero-dev/vite-plus@1856",
+    "vitest": "4.1.9"
   },
   "peerDependencies": {
     "@wooorm/starry-night": "^3.0.0",
