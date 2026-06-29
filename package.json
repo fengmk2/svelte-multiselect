@@ -57,7 +57,8 @@
     "test:package": "npm run package && npm pack --dry-run && vp build --config tests/package-smoke/vite.config.ts",
     "package": "svelte-package && find dist \\( -name '*.js' -o -name '*.d.ts' \\) -type f -exec perl -pi -e \"s/(\\.\\.?\\/[^'\\\"]*)\\.ts(['\\\"])/\\1.js\\2/g\" {} +",
     "prepublishOnly": "npm run package",
-    "changelog": "npx tsx https://github.com/janosh/workflows/raw/refs/heads/main/scripts/make-release-notes.ts"
+    "changelog": "npx tsx https://github.com/janosh/workflows/raw/refs/heads/main/scripts/make-release-notes.ts",
+    "prepare": "vp config"
   },
   "devDependencies": {
     "@janosh/vite-config": "github:janosh/dotfiles",
@@ -67,7 +68,7 @@
     "@sveltejs/package": "2.5.8",
     "@sveltejs/vite-plugin-svelte": "^7.1.2",
     "@types/node": "^26.0.1",
-    "@vitest/coverage-v8": "^4.1.9",
+    "@vitest/coverage-v8": "4.1.9",
     "@wooorm/starry-night": "^3.10.0",
     "acorn": "^8.17.0",
     "happy-dom": "^20.10.6",
@@ -75,9 +76,9 @@
     "svelte": "^5.56.4",
     "svelte-toc": "^0.7.0",
     "typescript": "6.0.3",
-    "vite": "^8.1.0",
-    "vite-plus": "0.2.1",
-    "vitest": "^4.1.9"
+    "vite": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.333e612a4d9d966e79724c336ba7bf422f79b442",
+    "vite-plus": "0.0.0-commit.333e612a4d9d966e79724c336ba7bf422f79b442",
+    "vitest": "4.1.9"
   },
   "peerDependencies": {
     "@wooorm/starry-night": "^3.0.0",
@@ -94,6 +95,15 @@
   },
   "overrides": {
     "esrap": "2.2.11",
-    "svelte": "$svelte"
+    "svelte": "$svelte",
+    "vite": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.333e612a4d9d966e79724c336ba7bf422f79b442",
+    "vitest": "4.1.9"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": "11.17.0",
+      "onFail": "download"
+    }
   }
 }

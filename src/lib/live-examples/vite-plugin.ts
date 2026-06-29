@@ -2,7 +2,7 @@
 import { parse } from 'acorn'
 import { Buffer } from 'node:buffer'
 import process from 'node:process'
-import type { HmrContext, Plugin, ViteDevServer } from 'vite'
+import type { HmrContext, Plugin, ViteDevServer } from 'vite-plus'
 import { EXAMPLE_MODULE_PREFIX } from './mdsvex-transform.ts'
 
 // Matches import paths emitted by mdsvex-transform, e.g. ___live_example___0.svelte
